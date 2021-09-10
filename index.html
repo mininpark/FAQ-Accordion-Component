@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>FAQ Accordion Card</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+  $(function() {     
+    $('.btn1').on('click', function(e) {
+      e.preventDefault();
+      $('.answer1').toggleClass('hidden');
+      $('.que_tt').addClass('visible');
+    });
+
+    $('.btn2').on('click', function(e) {
+      e.preventDefault();
+      $('.answer2').toggleClass('hidden');
+      $('.que_tt').addClass('visible');
+    });
+
+    $('.btn3').on('click', function(e) {
+      e.preventDefault();
+      $('.answer3').toggleClass('hidden');
+      $('.que_tt').addClass('visible');
+    });
+    $('.btn4').on('click', function(e) {
+      e.preventDefault();
+      $('.answer4').toggleClass('hidden');
+      $('.que_tt').addClass('visible');
+    });
+
+    $('.btn5').on('click', function(e) {
+      e.preventDefault();
+      $('.answer5').toggleClass('hidden');
+      $('.que_tt').addClass('visible');
+    });
+  })
+
+  </script>
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+  <link rel="stylesheet" href="./default.css">
+
+</head>
+<body>
+    <main class="faq">
+      <div class="img_box">
+        <div class="img_women responsive"></div>
+        <div class="img_questionbox"></div>
+        <div class="img_pattern responsive"></div>
+      </div>
+      <div class="faq_box">
+        <h2 class="main_tt">FAQ</h2>
+        <ul class="faq_list">
+          <li>
+            <div class="question">
+              <p class="que_tt">How many team members can I invite?</p>
+              <button class="btn1">bottom</button>
+            </div>
+            <p class="answer1 hidden">You can invite up to 2 additional users on the Free plan. There is no limit on 
+              team members for the Premium plan.</p>
+          </li>
+          <li>
+            <div class="question">
+              <p class="que_tt">What is the maximum file upload size?</p>
+              <button class="btn2">bottom</button>
+            </div>
+            <p class="answer2 hidden">No more than 2GB. All files in your account must fit your allotted storage space.
+            </p>
+          </li>
+          <li>
+            <div class="question">  
+              <p class="que_tt">How do I reset my password?</p>
+              <button class="btn3">bottom</button>
+            </div>
+            <p class="answer3 hidden"> Click “Forgot password” from the login page or “Change password” from your profile page.
+              A reset link will be emailed to you.</p>
+          </li>
+          <li>
+            <div class="question">
+              <p class="que_tt">Do you provide additional support?</p>
+              <button class="btn4">bottom</button>
+            </div>
+            <p class="answer4 hidden">Chat and email support is available 24/7. Phone lines are open during normal business hours.</p>
+          </li>
+          <li>
+            <div class="question">
+              <p class="que_tt">Can I cancel my subscription?</p>
+              <button class="btn5">bottom</button>
+            </div>
+            <p class="answer5 hidden"> Yes! Send us a message and we’ll process your request no questions asked.</p>
+          </li>
+        </ul>
+      </div>
+    </main>
+
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Mina</a>.
+    </div>
+
+</body>
+</html>
